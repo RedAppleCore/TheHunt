@@ -1,0 +1,8 @@
+name: Wanted
+main: com.wanted.Wanted
+author: Matty
+version: 1.0
+description: >
+             Wanted Plugin#
+             
+commands:
