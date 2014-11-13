@@ -13,7 +13,6 @@ import me.libraryaddict.disguise.disguisetypes.watchers.VillagerWatcher;
 import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Location;
-import org.bukkit.craftbukkit.v1_7_R4.entity.CraftVillager;
 import org.bukkit.entity.Entity;
 import org.bukkit.entity.EntityType;
 import org.bukkit.entity.Player;
