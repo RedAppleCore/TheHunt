@@ -22,7 +22,7 @@ public class Game {
     private static boolean hasStarted = false;
     public static List<String> players = new ArrayList<String>();
     private static List<String> roles = new ArrayList<String>();
-
+    
     public static void start() {
         GameState.setState(GameState.IN_GAME);
         new Role("Farmer");

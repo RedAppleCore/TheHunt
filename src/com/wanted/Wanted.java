@@ -2,8 +2,11 @@ package com.wanted;
 
 import com.wanted.handlers.Game;
 import com.wanted.listeners.player.AsyncPlayerPreLogin;
+import com.wanted.listeners.player.PlayerDamageByEntity;
+import com.wanted.listeners.player.PlayerDeath;
 import com.wanted.listeners.player.PlayerJoin;
 import com.wanted.listeners.player.PlayerQuit;
+import com.wanted.listeners.player.PlayerRespawn;
 import com.wanted.threads.StartCountdown;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -23,6 +26,9 @@ public class Wanted extends JavaPlugin{
         pm.registerEvents(new PlayerJoin(this), this);
         pm.registerEvents(new PlayerQuit(this), this);
         pm.registerEvents(new AsyncPlayerPreLogin(this), this);
+        pm.registerEvents(new PlayerDamageByEntity(this), this);
+        pm.registerEvents(new PlayerDeath(this), this);
+        pm.registerEvents(new PlayerRespawn(this), this);
     }
     
 }
