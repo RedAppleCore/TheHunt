@@ -17,6 +17,6 @@ public class ChatUtilities {
     }
     
     private static String starter(){
-        return GRAY + "[" + DARK_AQUA + "Wanted" + GRAY + "] " + GOLD;
+        return GRAY + "[" + DARK_AQUA + "VillagerHunt" + GRAY + "] " + GOLD;
     }
 }
