@@ -53,7 +53,7 @@ public class Game {
                     //Disguises.disguiseAsLibrarian(Bukkit.getPlayer(players.get(i)));
                 } else if (i == 2) {
                     Bukkit.getPlayer(players.get(i)).getInventory().setItem(0, Item.blaze);
-                    Bukkit.getPlayer(players.get(i)).getInventory().setItem(1, Item.poison);
+                    Bukkit.getPlayer(players.get(i)).getInventory().setItem(1, Item.gold);
                     ChatUtilities.onePlayer("Your role is: " + ChatColor.RED + roles.get(i), Bukkit.getPlayer(players.get(i)));
                     //Disguises.disguiseAsPriest(Bukkit.getPlayer(players.get(i)));
                 } else if (i == 3) {
