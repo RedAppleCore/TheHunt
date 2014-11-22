@@ -1,9 +1,11 @@
 package com.wanted;
 
 import com.wanted.handlers.Game;
+import com.wanted.listeners.item.ItemDrop;
 import com.wanted.listeners.player.AsyncPlayerPreLogin;
 import com.wanted.listeners.player.PlayerDamageByEntity;
 import com.wanted.listeners.player.PlayerDeath;
+import com.wanted.listeners.player.PlayerInteract;
 import com.wanted.listeners.player.PlayerJoin;
 import com.wanted.listeners.player.PlayerQuit;
 import com.wanted.listeners.player.PlayerRespawn;
@@ -29,6 +31,8 @@ public class Wanted extends JavaPlugin{
         pm.registerEvents(new PlayerDamageByEntity(this), this);
         pm.registerEvents(new PlayerDeath(this), this);
         pm.registerEvents(new PlayerRespawn(this), this);
+        pm.registerEvents(new PlayerInteract(this), this);
+        pm.registerEvents(new ItemDrop(this), this);
     }
     
 }
