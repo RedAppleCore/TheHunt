@@ -1,6 +1,7 @@
 package com.wanted;
 
 import com.wanted.handlers.Game;
+import com.wanted.listeners.WListener;
 import com.wanted.listeners.item.ItemDrop;
 import com.wanted.listeners.player.AsyncPlayerPreLogin;
 import com.wanted.listeners.player.PlayerDamageByEntity;
@@ -33,6 +34,7 @@ public class Wanted extends JavaPlugin{
         pm.registerEvents(new PlayerRespawn(this), this);
         pm.registerEvents(new PlayerInteract(this), this);
         pm.registerEvents(new ItemDrop(this), this);
+        pm.registerEvents(new WListener(this), this);
     }
     
 }
