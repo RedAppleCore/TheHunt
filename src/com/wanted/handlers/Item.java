@@ -32,7 +32,7 @@ public class Item {
     //blacksmith decleration
     public static ItemStack axe = new ItemStack(Material.IRON_AXE);
     private static ItemMeta axem = (ItemMeta) axe.getItemMeta();
-    public static ItemStack bow = new ItemStack(Material.BOW);
+    public static ItemStack bow = new ItemStack(Material.IRON_BARDING);
     private static ItemMeta bowm = (ItemMeta) bow.getItemMeta();
     
     //butcher decleration

@@ -22,7 +22,7 @@ public class Game {
     private static boolean hasStarted = false;
     public static List<String> players = new ArrayList<String>();
     private static List<String> roles = new ArrayList<String>();
-
+    
     public static void start() {
         GameState.setState(GameState.IN_GAME);
         new Role("Farmer");
@@ -53,7 +53,7 @@ public class Game {
                     //Disguises.disguiseAsLibrarian(Bukkit.getPlayer(players.get(i)));
                 } else if (i == 2) {
                     Bukkit.getPlayer(players.get(i)).getInventory().setItem(0, Item.blaze);
-                    Bukkit.getPlayer(players.get(i)).getInventory().setItem(1, Item.poison);
+                    Bukkit.getPlayer(players.get(i)).getInventory().setItem(1, Item.gold);
                     ChatUtilities.onePlayer("Your role is: " + ChatColor.RED + roles.get(i), Bukkit.getPlayer(players.get(i)));
                     //Disguises.disguiseAsPriest(Bukkit.getPlayer(players.get(i)));
                 } else if (i == 3) {

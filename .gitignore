@@ -1,6 +1,23 @@
-<<<<<<< HEAD
-/bin
-=======
-/dist/
-/build/
->>>>>>> branch 'master' of git@github.com:RedAppleCore/VillagerHunt.git
+# Eclipse stuff
+.classpath
+.project
+.settings/
+
+# netbeans
+nbproject/
+nbactions.xml
+
+# intellij
+*.iml
+*.ipr
+*.iws
+.idea/
+
+# Mac filesystem dust
+.DS_Store/
+
+# various other potential build files
+build/
+bin/
+dist/
+manifest.mf
